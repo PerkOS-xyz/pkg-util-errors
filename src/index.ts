@@ -69,6 +69,7 @@ export class ValidationError extends AppError {
       error: this.message,
       details: this.details,
       statusCode: this.statusCode,
+      context: this.context,
     };
   }
 }
@@ -150,6 +151,7 @@ export class RateLimitError extends AppError {
       error: this.message,
       retryAfter: this.retryAfter,
       statusCode: this.statusCode,
+      context: this.context,
     };
   }
 }
